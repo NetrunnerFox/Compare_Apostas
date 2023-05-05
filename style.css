@@ -1,0 +1,351 @@
+:root{
+    --fonte: 'Libre Franklin', sans-serif;
+    --vermelho: #FF010B;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #cfcece;
+}
+
+.cabeçalho{
+    text-align: center;
+}
+
+.cabeçalho__logo{
+    height: 84px;
+    margin: 10px 0;
+}
+
+.principal{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    justify-content: center;
+    background-color: var(--preto);
+    background-image:url(./imgs/bg-compare-apostas\ 1.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 460px;
+
+}
+
+.colunaUm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.principal__titulo{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.principal__logos{
+    width: 439px;
+    margin: 2.5em 0;
+}
+
+.principal__botao{
+    color: var(--branco);
+    background-color: var(--vermelho);
+    border-radius: 50px;
+    padding: 1em;
+    font-size: 20px;
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/*.principal__botao:hover{
+    color: var(--vermelho);
+    background-color: var(--branco);
+}*/
+
+.destaques__titulo{
+    font-family: var(--fonte);
+    color: var(--vermelho);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.destaques__lista{
+    list-style-type: none;
+}
+
+.destaques__lista__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    border-bottom: 0.5em solid var(--cinza);
+    text-align: center;
+}
+
+.item__logo{
+    width: 206px;
+}
+
+.item__descriçao{
+    font-family: var(--fonte);
+    color:var(--preto);
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+    margin: 0 2em;
+    max-width: 468px;
+}
+
+.item__botao{
+    color: var(--branco);
+    background-color: var(--vermelho);
+    border-radius: 50px;
+    padding: 1em;
+    font-size: 18px;
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+    min-width: 204px;
+    transition: 0.5s;
+}
+
+.item__botao:hover{
+    background-color: var(--preto);
+}
+
+.depositos{
+    background-color: var(--branco);
+    background-image:url(./imgs/bg-faça-depositos\ 1.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 620px;
+}
+
+.depositos__titulo{
+    font-family: var(--fonte);
+    color: var(--vermelho);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 0.8;
+    text-align: center;
+    margin: 1em 1em;
+
+}
+
+.depositos__titulo__justify{
+    font-size: 35px;
+}
+
+.depositos__conteudo{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    justify-content: center;
+ 
+}
+
+.depositos__descriçao{
+    font-family: var(--fonte);
+    color: var(--preto);
+    font-weight: 800;
+    font-size: 21px;
+    text-align: center;
+    margin: 0.2em 1em 1.5em 1em;
+    max-width: 486px;
+}
+
+.responsabilidade{
+    background-color: var(--preto);
+    background-image:url(./imgs/bg-\ idade\ 1.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 3em 0;
+    height: 620px;
+}
+
+.responsabilidade__titulo{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 42px;
+    line-height: 0.8;
+    text-align: center;
+
+}
+
+.responsabilidade__titulo__justify{
+    font-size: 38px;
+}
+
+.responsabilidade__colunaUm__imagem{
+    height: 201px;
+}
+
+.responsabilidade__conteudo{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.responsabilidade__colunaUm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsabilidade__descriçao{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-weight: 800;
+    font-size: 21px;
+    text-align: center;
+    margin: 1em 0 1em 1em;
+    border: 4px solid var(--branco);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-right: none;
+    padding: 2em;
+}
+
+
+.responsabilidade__descriçao__imagem{
+    height: 75px;
+    width: 156px;
+    align-self: end;
+    margin: 0 2em;
+}
+
+@media screen and (max-width: 940px){
+
+    .cabeçalho__logo{
+        height: 64px;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+    }
+
+    .principal__titulo{
+        font-size: 24px;
+    }
+
+    .principal__botao{
+        font-size: 16px;
+    }
+
+    .principal__logos{
+        width: 350px;
+    }
+
+    .destaques__titulo{
+        font-size: 30px;
+    }
+
+    .destaques__lista__item{
+        flex-direction: column;
+    }
+
+    .item__logo{
+        width: 100px;
+    }
+
+    .item__descriçao{
+        margin: 1em;
+    }
+
+    .item__botao{
+        font-size: 10px;
+    }
+
+    .depositos{
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .depositos__conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .depositos__titulo{
+        font-size: 32px;
+    }
+
+    .depositos__titulo__justify{
+        font-size: 22px;
+    }
+
+    .depositos__conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .depositos__descriçao{
+        font-size: 18px;
+    }
+
+    .responsabilidade{
+        height: auto;
+    }
+
+    .responsabilidade__titulo{
+        font-size: 21px;
+    }
+
+    .responsabilidade__titulo__justify{
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    .responsabilidade__conteudo{
+        display: flex;
+    }
+
+    .responsabilidade__colunaUm__imagem{
+        display: none;
+    }
+
+    .responsabilidade__descriçao{
+        font-size: 14px;
+        border-width: 1px;
+    }
+
+    .responsabilidade__descriçao__imagem{
+        height: 50px;
+        width: 104px;
+        align-self: center;
+        
+    }
+
+}
